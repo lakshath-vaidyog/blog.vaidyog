@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Sitemap: https://blog.vaidyog.com/sitemap.xml
+
+# Block admin/private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /wp-admin/
+Disallow: /*.json$
+Disallow: /*?*session=
+Disallow: /*?*utm_
+
+# Crawl-delay for politeness
+Crawl-delay: 1
