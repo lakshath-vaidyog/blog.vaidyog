@@ -641,10 +641,10 @@ const blogManager = (function() {
             excerpt: 'Learn proven strategies for MBBS doctors and specialists to maximize earning potential in private and government hospitals across India.',
             category: 'doctor',
             categoryName: 'Doctor Careers',
-            readTime: 8,
+            readTime: 10,
             author: 'Vaidyog Team',
             authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
-            date: 'Mar 15, 2026',
+            date: 'Feb 10, 2026',
             featured: true,
             url: 'blogs/doctor-salary.html'
         },
