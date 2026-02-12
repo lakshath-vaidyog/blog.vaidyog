@@ -650,16 +650,16 @@ const blogManager = (function() {
         },
         {
             id: 2,
-            title: 'ICU Nurse Career Path: From Staff to Superintendent',
-            excerpt: 'Complete guide to advancing your nursing career in critical care units with skills, certifications and promotion strategies.',
+            title: 'Nursing Career Guide 2026: Complete Salary, Specializations & Path',
+            excerpt: 'Complete nursing career guide 2026: GNM/B.Sc salaries ₹2.5-6 LPA, MSc Nursing ₹5-12 LPA, specializations breakdown, government vs private comparison & career advancement tips by Vaidyog Team.',
             category: 'nursing',
             categoryName: 'Nursing Careers',
-            readTime: 6,
-            author: 'Priya Singh, RN',
+            readTime: 12,
+            author: 'Vaidyog Team',
             authorImg: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
-            date: 'Mar 12, 2026',
+            date: 'Feb 12, 2026',
             featured: true,
-            url: 'blogs/nurse-career.html'
+            url: 'blogs/nursing-career-guide-2026.html'
         },
         {
             id: 3,

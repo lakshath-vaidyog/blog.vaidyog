@@ -8,9 +8,16 @@
   </url>
   <url>
     <loc>https://blog.vaidyog.com/blogs/doctor-salary.html</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Add all blog URLs -->
+  
+  <url>
+    <loc>https://blog.vaidyog.com/blogs/nursing-career-guide-2026.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
