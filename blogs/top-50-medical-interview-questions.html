@@ -1394,51 +1394,90 @@
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-bottom:2rem;">
-            <div>
-                <a href="https://blog.vaidyog.com" style="display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;margin-bottom:1rem;">
-                    <img src="/images/Vaidyog1.jpg" alt="Vaidyog" style="height:35px;">
-                    <span style="font-size:1.25rem;font-weight:700;">Vaidyog<span style="color:#4ab098;">Blog</span></span>
+        <div class="footer-content">
+
+            <!-- Brand Section -->
+            <div class="footer-section">
+                <a href="https://vaidyog.com" class="footer-logo" aria-label="Vaidyog Homepage">
+                    <i class="fas fa-stethoscope" aria-hidden="true"></i>
+                    <span>Vaidyog<span class="logo-highlight">Blog</span></span>
                 </a>
-                <p style="color:#adb5bd;font-size:0.9375rem;">India's #1 healthcare career guidance platform</p>
-            </div>
-            <div>
-                <h4 style="margin-bottom:1rem;color:#fff;">Quick Links</h4>
-                <ul style="list-style:none;padding:0;">
-                    <li style="margin-bottom:0.5rem;"><a href="../index.html#home" style="color:#adb5bd;text-decoration:none;">Home</a></li>
-                    <li style="margin-bottom:0.5rem;"><a href="../index.html#blogs" style="color:#adb5bd;text-decoration:none;">All Blogs</a></li>
-                    <li style="margin-bottom:0.5rem;"><a href="https://vaidyog.com/about-vaidyog-healthcare-job-site/" style="color:#adb5bd;text-decoration:none;">About Us</a></li>
-                    <li style="margin-bottom:0.5rem;"><a href="https://vaidyog.com/contact-us-healthcare-jobs-near-me/" style="color:#adb5bd;text-decoration:none;">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 style="margin-bottom:1rem;color:#fff;">Categories</h4>
-                <ul style="list-style:none;padding:0;">
-                    <li style="margin-bottom:0.5rem;"><a href="../index.html#blogs" style="color:#adb5bd;text-decoration:none;">Doctor Careers</a></li>
-                    <li style="margin-bottom:0.5rem;"><a href="../index.html#blogs" style="color:#adb5bd;text-decoration:none;">Nursing Jobs</a></li>
-                    <li style="margin-bottom:0.5rem;"><a href="../index.html#blogs" style="color:#adb5bd;text-decoration:none;">Hospital HR</a></li>
-                    <li style="margin-bottom:0.5rem;"><a href="../index.html#blogs" style="color:#adb5bd;text-decoration:none;">Medical Education</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 style="margin-bottom:1rem;color:#fff;">Connect With Us</h4>
-                <div style="display:flex;gap:1rem;margin-bottom:1rem;">
-                    <a href="https://www.facebook.com/share/1CXiHtjnLV/" target="_blank" style="color:#adb5bd;font-size:1.5rem;"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://x.com/vaidyog_" target="_blank" style="color:#adb5bd;font-size:1.5rem;"><i class="fab fa-twitter"></i></a>
-                    <a href="https://linkedin.com/company/vaidyogofficial" target="_blank" style="color:#adb5bd;font-size:1.5rem;"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/vaidyogofficial?igsh=MXIxNW5ncDI5NDIwNQ==" target="_blank" style="color:#adb5bd;font-size:1.5rem;"><i class="fab fa-instagram"></i></a>
-                </div>
-                <p style="color:#adb5bd;font-size:0.875rem;">
-                    📧 info@vaidyog.com<br>
-                    📞 +91-7090125255
+
+                <p class="footer-description">
+                    India's trusted platform for healthcare career guidance, medical job updates, and hospital hiring insights.
                 </p>
+
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1CXiHtjnLV/" 
+                       class="social-link" 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visit Vaidyog on Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://x.com/vaidyog_" 
+                       class="social-link" 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visit Vaidyog on X">
+                        <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/vaidyogofficial/" 
+                       class="social-link" 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visit Vaidyog on LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/vaidyogofficial" 
+                       class="social-link" 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visit Vaidyog on Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="https://vaidyog.com/about-vaidyog-healthcare-job-site/">About Us</a></li>
+                    <li><a href="https://vaidyog.com/contact-us-healthcare-jobs-near-me/">Contact</a></li>
+                    <li><a href="https://vaidyog.com/privacy-policy/">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Popular Categories -->
+            <div class="footer-section">
+                <h4>Popular Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#blogs">Doctor Careers</a></li>
+                    <li><a href="#blogs">Nursing Jobs</a></li>
+                    <li><a href="#blogs">Hospital HR</a></li>
+                    <li><a href="#blogs">Medical Education</a></li>
+                    <li><a href="#blogs">Salary Guides</a></li>
+                </ul>
             </div>
         </div>
-        <div style="border-top:1px solid #495057;padding-top:1.5rem;text-align:center;color:#adb5bd;font-size:0.875rem;">
-            <p>© 2026 Vaidyog. All rights reserved. | Empowering Healthcare Careers Across India</p>
+
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vaidyog. All rights reserved.</p>
+            <p>Built for healthcare professionals across India.</p>
         </div>
     </div>
 </footer>
+
 
 <script>
     // Mobile menu
