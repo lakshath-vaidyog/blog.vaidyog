@@ -2,7 +2,6 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
-const contactForm = document.getElementById('contactForm');
 const newsletterForm = document.querySelector('.newsletter-form');
 const blogCards = document.querySelectorAll('.blog-card');
 const searchBtn = document.querySelector('.search-btn');
@@ -12,11 +11,10 @@ function toggleMobileMenu() {
     navMenu.classList.toggle('active');
     const icon = menuToggle.querySelector('i');
     
-    // Change hamburger to X and vice versa
     if (navMenu.classList.contains('active')) {
         icon.classList.remove('fa-bars');
         icon.classList.add('fa-times');
-        document.body.style.overflow = 'hidden'; // Prevent scrolling
+        document.body.style.overflow = 'hidden';
     } else {
         icon.classList.remove('fa-times');
         icon.classList.add('fa-bars');
@@ -47,7 +45,6 @@ function smoothScroll(e) {
     const targetElement = document.querySelector(targetId);
     if (!targetElement) return;
     
-    // Close mobile menu if open
     if (navMenu.classList.contains('active')) {
         navMenu.classList.remove('active');
         const icon = menuToggle.querySelector('i');
@@ -56,11 +53,9 @@ function smoothScroll(e) {
         document.body.style.overflow = 'auto';
     }
     
-    // Update active nav link
     navLinks.forEach(link => link.classList.remove('active'));
     this.classList.add('active');
     
-    // Smooth scroll to target
     const headerHeight = document.querySelector('.navbar').offsetHeight;
     const targetPosition = targetElement.offsetTop - headerHeight - 20;
     
@@ -117,87 +112,6 @@ function addBlogCardHoverEffects() {
 
 addBlogCardHoverEffects();
 
-// ===== Contact Form Submission =====
-function handleContactFormSubmit(e) {
-    e.preventDefault();
-    
-    const formData = new FormData(contactForm);
-    const formValues = Object.fromEntries(formData);
-    
-    // Basic form validation
-    const requiredFields = ['name', 'email', 'subject', 'message'];
-    let isValid = true;
-    
-    requiredFields.forEach(field => {
-        const input = contactForm.querySelector(`[name="${field}"]`);
-        if (!input.value.trim()) {
-            showFormError(input, 'This field is required');
-            isValid = false;
-        } else {
-            clearFormError(input);
-        }
-    });
-    
-    // Email validation
-    const emailInput = contactForm.querySelector('[name="email"]');
-    if (emailInput.value && !isValidEmail(emailInput.value)) {
-        showFormError(emailInput, 'Please enter a valid email address');
-        isValid = false;
-    }
-    
-    if (isValid) {
-        // Show loading state
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-        submitBtn.disabled = true;
-        
-        // Simulate API call
-        setTimeout(() => {
-            // Show success message
-            showNotification('Thank you for your message! We will get back to you soon.', 'success');
-            
-            // Reset form
-            contactForm.reset();
-            
-            // Reset button
-            submitBtn.innerHTML = originalText;
-            submitBtn.disabled = false;
-        }, 1500);
-    }
-}
-
-function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-function showFormError(input, message) {
-    clearFormError(input);
-    
-    const errorElement = document.createElement('div');
-    errorElement.className = 'form-error';
-    errorElement.textContent = message;
-    errorElement.style.cssText = `
-        color: #dc3545;
-        font-size: 0.875rem;
-        margin-top: 5px;
-    `;
-    
-    input.parentNode.appendChild(errorElement);
-    input.style.borderColor = '#dc3545';
-}
-
-function clearFormError(input) {
-    const existingError = input.parentNode.querySelector('.form-error');
-    if (existingError) {
-        existingError.remove();
-    }
-    input.style.borderColor = '';
-}
-
-contactForm.addEventListener('submit', handleContactFormSubmit);
-
 // ===== Newsletter Subscription =====
 function handleNewsletterSubmit(e) {
     e.preventDefault();
@@ -215,13 +129,11 @@ function handleNewsletterSubmit(e) {
         return;
     }
     
-    // Show loading state
     const submitBtn = newsletterForm.querySelector('.btn-subscribe');
     const originalHtml = submitBtn.innerHTML;
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
     submitBtn.disabled = true;
     
-    // Simulate API call
     setTimeout(() => {
         showNotification('Thank you for subscribing! You will receive our weekly newsletter.', 'success');
         emailInput.value = '';
@@ -230,22 +142,27 @@ function handleNewsletterSubmit(e) {
     }, 1500);
 }
 
-newsletterForm.addEventListener('submit', handleNewsletterSubmit);
+if (newsletterForm) {
+    newsletterForm.addEventListener('submit', handleNewsletterSubmit);
+}
+
+// ===== Utility: Email Validation =====
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
 
 // ===== Notification System =====
 function showNotification(message, type = 'success') {
-    // Remove existing notification
     const existingNotification = document.querySelector('.notification');
     if (existingNotification) {
         existingNotification.remove();
     }
     
-    // Create notification element
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
     notification.textContent = message;
     
-    // Styles
     notification.style.cssText = `
         position: fixed;
         top: 100px;
@@ -261,19 +178,13 @@ function showNotification(message, type = 'success') {
         max-width: 400px;
     `;
     
-    if (type === 'success') {
-        notification.style.backgroundColor = '#4ab098';
-    } else {
-        notification.style.backgroundColor = '#dc3545';
-    }
+    notification.style.backgroundColor = type === 'success' ? '#4ab098' : '#dc3545';
     
-    // Add icon
     const icon = document.createElement('i');
     icon.className = type === 'success' ? 'fas fa-check-circle' : 'fas fa-exclamation-circle';
     icon.style.marginRight = '10px';
     notification.prepend(icon);
     
-    // Add close button
     const closeBtn = document.createElement('button');
     closeBtn.innerHTML = '<i class="fas fa-times"></i>';
     closeBtn.style.cssText = `
@@ -292,7 +203,6 @@ function showNotification(message, type = 'success') {
     
     document.body.appendChild(notification);
     
-    // Auto-remove after 5 seconds
     setTimeout(() => {
         if (notification.parentNode) {
             notification.style.animation = 'slideOut 0.3s ease-out';
@@ -303,10 +213,11 @@ function showNotification(message, type = 'success') {
 
 // ===== Search Functionality =====
 function initSearch() {
+    if (!searchBtn) return;
+
     searchBtn.addEventListener('click', (e) => {
         e.preventDefault();
         
-        // Create search overlay
         const searchOverlay = document.createElement('div');
         searchOverlay.className = 'search-overlay';
         searchOverlay.style.cssText = `
@@ -324,7 +235,6 @@ function initSearch() {
             transition: opacity 0.3s ease;
         `;
         
-        // Create search container
         const searchContainer = document.createElement('div');
         searchContainer.style.cssText = `
             width: 90%;
@@ -337,7 +247,6 @@ function initSearch() {
             transition: transform 0.3s ease;
         `;
         
-        // Create close button
         const closeBtn = document.createElement('button');
         closeBtn.innerHTML = '<i class="fas fa-times"></i>';
         closeBtn.style.cssText = `
@@ -357,7 +266,6 @@ function initSearch() {
             setTimeout(() => searchOverlay.remove(), 300);
         });
         
-        // Create search input
         const searchInput = document.createElement('input');
         searchInput.type = 'text';
         searchInput.placeholder = 'Search for healthcare topics, career advice, or articles...';
@@ -371,13 +279,9 @@ function initSearch() {
             outline: none;
         `;
         
-        // Create search results container
         const resultsContainer = document.createElement('div');
         resultsContainer.className = 'search-results';
-        resultsContainer.style.cssText = `
-            max-height: 400px;
-            overflow-y: auto;
-        `;
+        resultsContainer.style.cssText = `max-height: 400px; overflow-y: auto;`;
         
         searchContainer.appendChild(closeBtn);
         searchContainer.appendChild(searchInput);
@@ -385,17 +289,14 @@ function initSearch() {
         searchOverlay.appendChild(searchContainer);
         document.body.appendChild(searchOverlay);
         
-        // Trigger animation
         setTimeout(() => {
             searchOverlay.style.opacity = '1';
             searchContainer.style.transform = 'translateY(0)';
             searchInput.focus();
         }, 10);
         
-        // Search functionality
         searchInput.addEventListener('input', debounce(handleSearch, 300));
         
-        // Close on escape key
         document.addEventListener('keydown', function closeOnEscape(e) {
             if (e.key === 'Escape') {
                 searchOverlay.style.opacity = '0';
@@ -422,21 +323,16 @@ function handleSearch() {
         return;
     }
     
-    // Simulate search results (in a real app, this would be an API call)
     const mockResults = [
         { title: 'Doctor Salary Negotiation Guide', category: 'Doctor Careers', match: 95 },
         { title: 'ICU Nurse Career Progression', category: 'Nursing Careers', match: 85 },
-        { title: 'Medical Interview Questions 2024', category: 'Hospital HR', match: 75 },
+        { title: 'Medical Interview Questions 2026', category: 'Hospital HR', match: 75 },
         { title: 'NEET PG Preparation Strategy', category: 'Medical Education', match: 65 },
         { title: 'Private vs Government Hospital Jobs', category: 'Doctor Careers', match: 60 }
     ];
     
-    // Filter and sort results
-    const filteredResults = mockResults
-        .filter(result => result.match > 50)
-        .sort((a, b) => b.match - a.match);
+    const filteredResults = mockResults.filter(result => result.match > 50).sort((a, b) => b.match - a.match);
     
-    // Display results
     if (filteredResults.length > 0) {
         resultsContainer.innerHTML = filteredResults.map(result => `
             <div class="search-result-item" style="
@@ -453,17 +349,12 @@ function handleSearch() {
             </div>
         `).join('');
         
-        // Add click handlers to result items
         document.querySelectorAll('.search-result-item').forEach(item => {
             item.addEventListener('click', () => {
                 showNotification('Search functionality demo. In a real app, this would navigate to the article.', 'success');
             });
-            item.addEventListener('mouseenter', function() {
-                this.style.backgroundColor = '#f8f9fa';
-            });
-            item.addEventListener('mouseleave', function() {
-                this.style.backgroundColor = 'transparent';
-            });
+            item.addEventListener('mouseenter', function() { this.style.backgroundColor = '#f8f9fa'; });
+            item.addEventListener('mouseleave', function() { this.style.backgroundColor = 'transparent'; });
         });
     } else {
         resultsContainer.innerHTML = '<p style="text-align: center; color: #666; padding: 20px;">No results found. Try different keywords.</p>';
@@ -499,7 +390,6 @@ function initScrollAnimations() {
         });
     }, observerOptions);
     
-    // Observe elements for animation
     document.querySelectorAll('.category-card, .blog-card').forEach(card => {
         observer.observe(card);
     });
@@ -521,45 +411,21 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     initSearch();
     
-    // Add CSS animations
     const style = document.createElement('style');
     style.textContent = `
         @keyframes slideIn {
-            from {
-                transform: translateX(100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
         }
-        
         @keyframes slideOut {
-            from {
-                transform: translateX(0);
-                opacity: 1;
-            }
-            to {
-                transform: translateX(100%);
-                opacity: 0;
-            }
+            from { transform: translateX(0); opacity: 1; }
+            to { transform: translateX(100%); opacity: 0; }
         }
-        
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        
-        .search-overlay {
-            backdrop-filter: blur(5px);
-        }
+        .search-overlay { backdrop-filter: blur(5px); }
     `;
     document.head.appendChild(style);
 });
@@ -593,7 +459,6 @@ function createBackToTopButton() {
     
     document.body.appendChild(backToTopBtn);
     
-    // Show/hide button based on scroll position
     window.addEventListener('scroll', () => {
         if (window.scrollY > 500) {
             backToTopBtn.style.opacity = '1';
@@ -604,36 +469,16 @@ function createBackToTopButton() {
         }
     });
     
-    // Scroll to top when clicked
     backToTopBtn.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 }
 
-// Initialize back to top button after page load
 setTimeout(createBackToTopButton, 1000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // ===== BLOG MANAGEMENT SYSTEM =====
 const blogManager = (function() {
-    // Blog data array - 12 UNIQUE BLOGS
     const blogData = [
         {
             id: 1,
@@ -793,7 +638,6 @@ const blogManager = (function() {
         }
     ];
 
-    // Configuration
     const config = {
         blogsPerPage: 6,
         currentPage: 1,
@@ -803,10 +647,8 @@ const blogManager = (function() {
         currentSearch: ''
     };
 
-    // DOM Elements
     let featuredBlogsContainer, allBlogsContainer, blogTemplate, paginationElement;
 
-    // Initialize
     function init() {
         featuredBlogsContainer = document.getElementById('featuredBlogs');
         allBlogsContainer = document.getElementById('allBlogs');
@@ -817,22 +659,17 @@ const blogManager = (function() {
         setupEventListeners();
     }
 
-    // Render featured blogs
     function renderFeaturedBlogs() {
         featuredBlogsContainer.innerHTML = '';
-        
         const featured = blogData.filter(blog => blog.featured);
-        
         featured.forEach(blog => {
             const blogCard = createBlogCard(blog);
             featuredBlogsContainer.appendChild(blogCard);
         });
     }
 
-    // Render all blogs with filters
     function renderAllBlogs() {
         allBlogsContainer.innerHTML = '';
-        
         let filteredBlogs = filterBlogs();
         
         if (filteredBlogs.length === 0) {
@@ -840,27 +677,22 @@ const blogManager = (function() {
             return;
         }
 
-        // Calculate pagination
         const totalFilteredBlogs = filteredBlogs.length;
         const startIndex = (config.currentPage - 1) * config.blogsPerPage;
         const endIndex = Math.min(startIndex + config.blogsPerPage, totalFilteredBlogs);
         const paginatedBlogs = filteredBlogs.slice(startIndex, endIndex);
 
-        // Render blogs
         paginatedBlogs.forEach(blog => {
             const blogCard = createBlogCard(blog);
             allBlogsContainer.appendChild(blogCard);
         });
 
-        // Update pagination
         updatePagination(totalFilteredBlogs);
     }
 
-    // Filter blogs based on current filters
     function filterBlogs() {
         let filtered = [...blogData];
 
-        // Search filter
         if (config.currentSearch) {
             const searchTerm = config.currentSearch.toLowerCase();
             filtered = filtered.filter(blog =>
@@ -871,12 +703,10 @@ const blogManager = (function() {
             );
         }
 
-        // Category filter
         if (config.currentCategory !== 'all') {
             filtered = filtered.filter(blog => blog.category === config.currentCategory);
         }
 
-        // Time filter
         if (config.currentTimeFilter !== 'all') {
             filtered = filtered.filter(blog => {
                 switch(config.currentTimeFilter) {
@@ -888,34 +718,26 @@ const blogManager = (function() {
             });
         }
 
-        // Sort
         filtered.sort((a, b) => {
             switch(config.currentSort) {
-                case 'newest':
-                    return new Date(b.date) - new Date(a.date);
-                case 'oldest':
-                    return new Date(a.date) - new Date(b.date);
-                case 'reading-time':
-                    return a.readTime - b.readTime;
-                default:
-                    return 0;
+                case 'newest': return new Date(b.date) - new Date(a.date);
+                case 'oldest': return new Date(a.date) - new Date(b.date);
+                case 'reading-time': return a.readTime - b.readTime;
+                default: return 0;
             }
         });
 
         return filtered;
     }
 
-    // Create blog card element
     function createBlogCard(blog) {
         const template = blogTemplate.content.cloneNode(true);
         const blogCard = template.querySelector('.blog-card');
         
-        // Set category color
         const categorySpan = blogCard.querySelector('.blog-category');
         categorySpan.textContent = blog.categoryName;
         categorySpan.style.backgroundColor = getCategoryColor(blog.category);
         
-        // Set content
         blogCard.querySelector('.blog-title').textContent = blog.title;
         blogCard.querySelector('.blog-excerpt').textContent = blog.excerpt;
         blogCard.querySelector('.read-time').innerHTML = `<i class="far fa-clock"></i> ${blog.readTime} min read`;
@@ -924,14 +746,12 @@ const blogManager = (function() {
         blogCard.querySelector('.author-name').textContent = blog.author;
         blogCard.querySelector('.post-date').textContent = blog.date;
         
-        // Set read more link to actual blog page
         const readMoreBtn = blogCard.querySelector('.read-more');
         readMoreBtn.href = blog.url;
         
         return blogCard;
     }
 
-    // Get category color
     function getCategoryColor(category) {
         const colors = {
             'doctor': '#4ab098',
@@ -942,19 +762,16 @@ const blogManager = (function() {
         return colors[category] || '#4ab098';
     }
 
-    // Update pagination
     function updatePagination(totalBlogs) {
         const totalPages = Math.ceil(totalBlogs / config.blogsPerPage);
         const pageNumbers = paginationElement.querySelector('.page-numbers');
         
-        // Update page info
         const startRange = ((config.currentPage - 1) * config.blogsPerPage) + 1;
         const endRange = Math.min(config.currentPage * config.blogsPerPage, totalBlogs);
         
         document.getElementById('currentRange').textContent = `${startRange}-${endRange}`;
         document.getElementById('totalBlogs').textContent = totalBlogs;
         
-        // Update page numbers
         pageNumbers.innerHTML = '';
         
         if (totalPages > 1) {
@@ -971,22 +788,17 @@ const blogManager = (function() {
             paginationElement.style.display = 'none';
         }
         
-        // Update prev/next buttons
         document.getElementById('prevPage').disabled = config.currentPage === 1;
         document.getElementById('nextPage').disabled = config.currentPage === totalPages;
-        
-        // Show page info
         document.querySelector('.page-info').style.display = 'block';
     }
 
-    // Go to specific page
     function goToPage(page) {
         config.currentPage = page;
         renderAllBlogs();
         scrollToBlogs();
     }
 
-    // Show no results message
     function showNoResults() {
         allBlogsContainer.innerHTML = `
             <div class="no-results">
@@ -998,12 +810,10 @@ const blogManager = (function() {
                 </button>
             </div>
         `;
-        
         document.getElementById('resetFiltersBtn')?.addEventListener('click', resetAllFilters);
         paginationElement.style.display = 'none';
     }
 
-    // Reset all filters
     function resetAllFilters() {
         config.currentPage = 1;
         config.currentCategory = 'all';
@@ -1019,20 +829,16 @@ const blogManager = (function() {
         renderAllBlogs();
     }
 
-    // Scroll to blogs section
     function scrollToBlogs() {
         const blogsSection = document.getElementById('blogs');
         const headerHeight = document.querySelector('.navbar').offsetHeight;
-        
         window.scrollTo({
             top: blogsSection.offsetTop - headerHeight - 20,
             behavior: 'smooth'
         });
     }
 
-    // Setup event listeners
     function setupEventListeners() {
-        // View All Toggle
         const viewAllBtn = document.getElementById('viewAllBtn');
         const blogFilters = document.getElementById('blogFilters');
         
@@ -1054,7 +860,6 @@ const blogManager = (function() {
             }
         });
 
-        // Filter change events
         document.getElementById('categoryFilter').addEventListener('change', (e) => {
             config.currentCategory = e.target.value;
             config.currentPage = 1;
@@ -1073,7 +878,6 @@ const blogManager = (function() {
             renderAllBlogs();
         });
 
-        // Search input
         const blogSearch = document.getElementById('blogSearch');
         const clearSearch = document.getElementById('clearSearch');
         
@@ -1090,26 +894,19 @@ const blogManager = (function() {
             renderAllBlogs();
         });
 
-        // Reset filters
         document.getElementById('resetFilters').addEventListener('click', resetAllFilters);
 
-        // Pagination buttons
         document.getElementById('prevPage').addEventListener('click', () => {
-            if (config.currentPage > 1) {
-                goToPage(config.currentPage - 1);
-            }
+            if (config.currentPage > 1) goToPage(config.currentPage - 1);
         });
 
         document.getElementById('nextPage').addEventListener('click', () => {
             const filteredBlogs = filterBlogs();
             const totalPages = Math.ceil(filteredBlogs.length / config.blogsPerPage);
-            if (config.currentPage < totalPages) {
-                goToPage(config.currentPage + 1);
-            }
+            if (config.currentPage < totalPages) goToPage(config.currentPage + 1);
         });
     }
 
-    // Debounce function
     function debounce(func, wait) {
         let timeout;
         return function executedFunction(...args) {
@@ -1122,83 +919,34 @@ const blogManager = (function() {
         };
     }
 
-    // Public API
     return {
-        init: init,
+        init,
         getBlogs: () => blogData,
         getFilteredBlogs: filterBlogs,
         resetFilters: resetAllFilters,
-        config: config
+        config
     };
 })();
 
-// Initialize blog manager when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     blogManager.init();
 });
 
-// Function to manually add more blogs
-function addNewBlog(blogData) {
-    const blogs = blogManager.getBlogs();
-    const newId = blogs.length + 1;
-    
-    blogs.push({
-        id: newId,
-        ...blogData,
-        featured: false
-    });
-    
-    // If "View All" is currently expanded, refresh the display
-    const viewAllBtn = document.getElementById('viewAllBtn');
-    if (viewAllBtn.classList.contains('expanded')) {
-        blogManager.config.currentPage = 1;
-        blogManager.getFilteredBlogs = blogManager.getBlogs;
-        const allBlogsContainer = document.getElementById('allBlogs');
-        allBlogsContainer.innerHTML = '';
-        blogManager.renderAllBlogs();
-    }
-}
 
-// Example: How to add more blogs
-/*
-addNewBlog({
-    title: 'New Blog Title',
-    excerpt: 'Blog excerpt here...',
-    category: 'doctor',
-    categoryName: 'Doctor Careers',
-    readTime: 8,
-    author: 'Author Name',
-    authorImg: 'https://example.com/image.jpg',
-    date: 'Apr 10, 2026',
-    url: 'blogs/new-blog.html'
-});
-*/
-
-
-
-
-
-
-
-
-// ===== HAMBURGER MENU FUNCTIONALITY =====
+// ===== HAMBURGER MENU (DOMContentLoaded block) =====
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
     
-    // Mobile Menu Toggle
     if (menuToggle && navMenu) {
         menuToggle.addEventListener('click', function() {
-            // Toggle menu visibility
             navMenu.classList.toggle('active');
-            
-            // Change hamburger to X and vice versa
             const icon = menuToggle.querySelector('i');
             if (navMenu.classList.contains('active')) {
                 icon.classList.remove('fa-bars');
                 icon.classList.add('fa-times');
-                document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+                document.body.style.overflow = 'hidden';
             } else {
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
@@ -1207,7 +955,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Close mobile menu when clicking on a link
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             if (navMenu.classList.contains('active')) {
@@ -1220,7 +967,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Close mobile menu when clicking outside
     document.addEventListener('click', function(event) {
         if (navMenu && navMenu.classList.contains('active')) {
             if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
@@ -1233,7 +979,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Close mobile menu on window resize (if resized to desktop)
     window.addEventListener('resize', function() {
         if (window.innerWidth > 768 && navMenu.classList.contains('active')) {
             navMenu.classList.remove('active');
@@ -1246,5 +991,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-// Also add this CSS to make sure the menu is properly styled for mobile
