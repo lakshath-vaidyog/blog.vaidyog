@@ -668,11 +668,11 @@ const blogManager = (function() {
             category: 'hospital',
             categoryName: 'Hospital HR',
             readTime: 10,
-            author: 'Amit Verma',
+            author: 'Vaidyog Team',
             authorImg: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
-            date: 'Mar 10, 2026',
+            date: 'Feb 17, 2026',
             featured: true,
-            url: 'blogs/medical-interview.html'
+            url: 'blogs/top-50-medical-interview-questions.html'
         },
         {
             id: 4,
