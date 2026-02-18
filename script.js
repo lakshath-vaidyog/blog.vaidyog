@@ -526,11 +526,11 @@ const blogManager = (function() {
             category: 'education',
             categoryName: 'Medical Education',
             readTime: 12,
-            author: 'Dr. Anjali Mehta',
+            author: 'Vaidyog Team',
             authorImg: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
-            date: 'Mar 8, 2026',
+            date: 'Feb 18, 2026',
             featured: true,
-            url: 'blogs/neet-pg.html'
+            url: 'blogs/neet-pg-2026-preparation-strategy.html'
         },
         {
             id: 5,
