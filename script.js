@@ -525,7 +525,7 @@ const blogManager = (function() {
             excerpt: 'Month-by-month study plan, important topics, and time management tips for NEET PG aspirants aiming for top ranks.',
             category: 'education',
             categoryName: 'Medical Education',
-            readTime: 12,
+            readTime: 15,
             author: 'Vaidyog Team',
             authorImg: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
             date: 'Feb 18, 2026',
@@ -538,12 +538,12 @@ const blogManager = (function() {
             excerpt: 'Detailed comparison of salary, work-life balance, career growth, and job security in India\'s healthcare sector.',
             category: 'doctor',
             categoryName: 'Doctor Careers',
-            readTime: 7,
-            author: 'Dr. Sanjay Kumar',
+            readTime: 11,
+            author: 'Vaidyog Team',
             authorImg: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
-            date: 'Mar 5, 2026',
+            date: 'Feb 19, 2026',
             featured: true,
-            url: 'blogs/hospital-jobs.html'
+            url: 'blogs/private-vs-government-hospital-jobs.html'
         },
         {
             id: 6,
