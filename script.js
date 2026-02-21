@@ -552,11 +552,11 @@ const blogManager = (function() {
             category: 'nursing',
             categoryName: 'Nursing Careers',
             readTime: 5,
-            author: 'Maria Thomas',
+            author: 'Vaidyog Team',
             authorImg: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
-            date: 'Mar 3, 2026',
+            date: 'Feb 21, 2026',
             featured: true,
-            url: 'blogs/abroad-nursing.html'
+            url: 'blogs/abroad-nursing-jobs-guide.html'
         },
         {
             id: 7,
