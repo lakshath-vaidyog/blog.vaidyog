@@ -565,11 +565,11 @@ const blogManager = (function() {
             category: 'doctor',
             categoryName: 'Doctor Careers',
             readTime: 9,
-            author: 'Dr. Ravi Verma',
+            author: 'Vaidyog Team',
             authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
-            date: 'Feb 28, 2026',
+            date: 'Feb 23, 2026',
             featured: false,
-            url: 'blogs/medical-specialization.html'
+            url: 'blogs/medical-specialization-guide.html'
         },
         {
             id: 8,
