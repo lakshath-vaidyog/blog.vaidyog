@@ -578,11 +578,11 @@ const blogManager = (function() {
             category: 'nursing',
             categoryName: 'Nursing Careers',
             readTime: 7,
-            author: 'Sneha Patel',
+            author: 'Vaidyog Team',
             authorImg: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
-            date: 'Feb 25, 2026',
+            date: 'Feb 24, 2026',
             featured: false,
-            url: 'blogs/nursing-salary.html'
+            url: 'blogs/nursing-salary-guide-2026.html'
         },
         {
             id: 9,
