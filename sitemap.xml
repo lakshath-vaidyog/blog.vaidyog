@@ -62,5 +62,11 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://blog.vaidyog.com/blogs/hospital-management.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
 
 </urlset>

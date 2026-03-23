@@ -585,18 +585,18 @@ const blogManager = (function() {
             url: 'blogs/nursing-salary-guide-2026.html'
         },
         {
-            id: 9,
-            title: 'Hospital Management Careers: MBA vs MHA',
-            excerpt: 'Which degree is better for hospital administration roles? Complete comparison of career paths, salaries, and opportunities.',
-            category: 'hospital',
-            categoryName: 'Hospital HR',
-            readTime: 11,
-            author: 'Arun Sharma',
-            authorImg: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
-            date: 'Feb 22, 2026',
-            featured: false,
-            url: 'blogs/hospital-management.html'
-        },
+    id: 9,
+    title: 'Hospital Management Careers: MBA vs MHA',
+    excerpt: 'Which degree is better for hospital administration roles in India? Complete comparison of career paths, salaries, top colleges, and opportunities for 2026.',
+    category: 'hospital',
+    categoryName: 'Hospital HR',
+    readTime: 11,
+    author: 'Vaidyog Team',
+    authorImg: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
+    date: 'Feb 22, 2026',
+    featured: false,
+    url: 'blogs/hospital-management.html'
+},
         {
             id: 10,
             title: 'AIIMS vs Private Medical Colleges: Career Impact',
