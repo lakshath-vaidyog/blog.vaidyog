@@ -60,7 +60,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     <link rel="stylesheet" href="../styles.css">
 
     <style>
@@ -305,7 +306,7 @@
 
         <!-- Featured Image -->
         <figure style="margin:2rem 0;border-radius:12px;overflow:hidden;">
-            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=1200&auto=format&fit=crop"
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=1200&auto=format&fit=crop" width="800" height="450" loading="lazy"
                  alt="Medical professional preparing for a hospital job interview in India 2026"
                  loading="lazy"
                  style="width:100%;height:auto;display:block;">
@@ -1154,7 +1155,7 @@
 
         <!-- Image break -->
         <figure style="margin:3rem 0;border-radius:12px;overflow:hidden;">
-            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop"
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop" width="800" height="450" loading="lazy"
                  alt="Healthcare team in discussion - medical job interview preparation"
                  loading="lazy"
                  style="width:100%;height:auto;display:block;">
