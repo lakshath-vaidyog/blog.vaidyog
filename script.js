@@ -113,7 +113,7 @@ const blogData = [
         readTime: 11,
         author: 'Vaidyog Team',
         authorImg: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
-        date: 'Feb 22, 2026',
+        date: 'Mar 23, 2026',
         featured: false,
         url: 'blogs/hospital-management.html'
     }
