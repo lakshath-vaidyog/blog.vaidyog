@@ -116,6 +116,19 @@ const blogData = [
         date: 'Mar 23, 2026',
         featured: false,
         url: 'blogs/hospital-management.html'
+    },
+    {
+    id: 10,
+    title: 'Will AI Replace Doctors? Future of AI in Healthcare 2026',
+    excerpt: 'Will AI replace doctors? Explore how AI is transforming Indian healthcare, benefits in diagnosis, and why doctors will always be essential.',
+    category: 'technology',
+    categoryName: 'Healthcare Technology',
+    readTime: 12,
+    author: 'Vaidyog Team',
+    authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7',
+    date: 'Mar 26, 2026',
+    featured: true,
+    url: 'blogs/ai-in-healthcare-future.html'
     }
 ];
 
