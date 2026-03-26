@@ -96,7 +96,7 @@
 <nav class="navbar">
     <div class="container nav-container">
         <a href="https://blog.vaidyog.com" class="logo" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
-            <img src="/images/Vaidyog1.jpg" alt="Vaidyog" style="height:45px;width:auto;object-fit:contain;">
+            <img src="/images/Vaidyog1.jpg" alt="Vaidyog - India's #1 Healthcare Job Portal" style="height:45px;width:auto;object-fit:contain;">
             <span><span class="logo-highlight">Blog</span></span>
         </a>
         <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
@@ -108,6 +108,22 @@
         </ul>
     </div>
 </nav>
+
+<style>
+.nav-link {
+    color: #495057;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.nav-link:hover {
+    background-color: #4ab098;
+    color: #ffffff;
+}
+</style>
 
 <section class="blog-post-hero">
     <div class="blog-post-container">
@@ -374,6 +390,7 @@
         </div>
     </div>
 </footer>
+
 <script>
     document.querySelector('.menu-toggle')?.addEventListener('click', function() {
         document.querySelector('.nav-menu').classList.toggle('active');

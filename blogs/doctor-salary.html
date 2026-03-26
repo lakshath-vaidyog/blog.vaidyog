@@ -261,25 +261,37 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="https://blog.vaidyog.com" class="logo" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
-                <img src="/images/Vaidyog1.jpg" alt="Vaidyog - India's #1 Healthcare Job Portal" style="height:45px;width:auto;object-fit:contain;">
-                <span><span class="logo-highlight">Blog</span></span>
-            </a>
-            
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <ul class="nav-menu">
-                <li><a href="../index.html#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="../index.html#blogs" class="nav-link"><i class="fas fa-newspaper"></i> Blogs</a></li>
-                <li><a href="../index.html#about" class="nav-link"><i class="fas fa-users"></i> About</a></li>
-                <li><a href="../index.html#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+   <nav class="navbar">
+    <div class="container nav-container">
+        <a href="https://blog.vaidyog.com" class="logo" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
+            <img src="/images/Vaidyog1.jpg" alt="Vaidyog - India's #1 Healthcare Job Portal" style="height:45px;width:auto;object-fit:contain;">
+            <span><span class="logo-highlight">Blog</span></span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+        <ul class="nav-menu">
+            <li><a href="../index.html#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="../index.html#blogs" class="nav-link"><i class="fas fa-newspaper"></i> Blogs</a></li>
+            <li><a href="../index.html#about" class="nav-link"><i class="fas fa-users"></i> About</a></li>
+            <li><a href="../index.html#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<style>
+.nav-link {
+    color: #495057;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.nav-link:hover {
+    background-color: #4ab098;
+    color: #ffffff;
+}
+</style>
 
         <!-- Blog Post Hero -->
     <section class="blog-post-hero">
