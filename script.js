@@ -129,7 +129,20 @@ const blogData = [
     date: 'Mar 26, 2026',
     featured: true,
     url: 'blogs/ai-in-healthcare-future.html'
-    }
+    },
+    {
+    id: 11,
+    title: 'Staff Nurse Jobs Private Hospitals 2026: Salary, Guide & Tips',
+    excerpt: 'Complete guide to staff nurse jobs in private hospitals 2026. Salary ₹25K-60K/month, top hospital chains, interview tips, and how to get hired fast.',
+    category: 'nursing',
+    categoryName: 'Nursing Careers',
+    readTime: 10,
+    author: 'Vaidyog Team',
+    authorImg: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
+    date: 'Mar 30, 2026',
+    featured: true,
+    url: 'blogs/staff-nurse-jobs-private-hospitals.html'
+}
 ];
 
 // ===== Config =====
