@@ -142,6 +142,19 @@ const blogData = [
     date: 'Mar 30, 2026',
     featured: true,
     url: 'blogs/staff-nurse-jobs-private-hospitals.html'
+},
+{
+    id: 12,
+    title: 'Medical Coding Jobs Remote 2026: Fresher Guide & Salary',
+    excerpt: 'Find medical coding jobs remote in India 2026. Work from home medical coding jobs for freshers: salary ₹25K-45K, certification guide, top companies hiring.',
+    category: 'medical-coding',
+    categoryName: 'Medical Coding',
+    readTime: 10,
+    author: 'Vaidyog Team',
+    authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7',
+    date: 'Mar 31, 2026',
+    featured: true,
+    url: 'blogs/medical-coding-jobs-remote.html'
 }
 ];
 
