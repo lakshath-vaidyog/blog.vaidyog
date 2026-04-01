@@ -155,6 +155,19 @@ const blogData = [
     date: 'Mar 31, 2026',
     featured: true,
     url: 'blogs/medical-coding-jobs-remote.html'
+},
+{
+    id: 13,
+    title: 'Hospital Vacancies Bangalore 2026: Top Hospitals Hiring',
+    excerpt: 'Find hospital vacancies in Bangalore 2026. Latest hospital jobs in Bangalore for nurses, doctors, technicians. Salary ₹25K-1.5L, Apollo, Manipal, Fortis hiring.',
+    category: 'healthcare-jobs',
+    categoryName: 'Healthcare Jobs',
+    readTime: 9,
+    author: 'Vaidyog Team',
+    authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7',
+    date: 'Apr 1, 2026',
+    featured: true,
+    url: 'blogs/hospital-vacancies-bangalore.html'
 }
 ];
 
