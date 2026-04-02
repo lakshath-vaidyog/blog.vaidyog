@@ -168,6 +168,19 @@ const blogData = [
     date: 'Apr 1, 2026',
     featured: true,
     url: 'blogs/hospital-vacancies-bangalore.html'
+},
+{
+    id: 14,
+    title: 'Medical Field Jobs List 2026: 50+ Career Options in India',
+    excerpt: 'Complete medical field jobs list 2026. Explore 50+ career options in medical field with salary, qualification, and growth. Find your dream medical field job.',
+    category: 'medical-careers',
+    categoryName: 'Medical Careers',
+    readTime: 12,
+    author: 'Vaidyog Team',
+    authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7',
+    date: 'Apr 2, 2026',
+    featured: true,
+    url: 'blogs/medical-field-jobs-list.html'
 }
 ];
 
