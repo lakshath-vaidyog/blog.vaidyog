@@ -181,6 +181,19 @@ const blogData = [
     date: 'Apr 2, 2026',
     featured: true,
     url: 'blogs/medical-field-jobs-list.html'
+},
+{
+    id: 15,
+    title: 'Radiologist Jobs India 2026: Salary, Scope & Top Hospitals Hiring',
+    excerpt: 'Find radiologist jobs in India 2026. Average salary ₹15L-40L, top hospitals hiring radiologists, MD Radiology scope, and complete career guide.',
+    category: 'doctor',
+    categoryName: 'Doctor Careers',
+    readTime: 9,
+    author: 'Vaidyog Team',
+    authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7',
+    date: 'Apr 6, 2026',
+    featured: true,
+    url: 'blogs/radiologist-jobs-india.html'
 }
 ];
 
