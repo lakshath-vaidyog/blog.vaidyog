@@ -194,6 +194,19 @@ const blogData = [
     date: 'Apr 6, 2026',
     featured: true,
     url: 'blogs/radiologist-jobs-india.html'
+},
+{
+    id: 16,
+    title: 'Medical Representative Jobs India 2026: Salary & Top Companies',
+    excerpt: 'Find medical representative jobs in India 2026. Average salary ₹3L-8L, top pharma companies hiring, skills required, and complete career guide for MR jobs.',
+    category: 'pharma',
+    categoryName: 'Pharma Careers',
+    readTime: 9,
+    author: 'Vaidyog Team',
+    authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7',
+    date: 'Apr 7, 2026',
+    featured: true,
+    url: 'blogs/medical-representative-jobs-india.html'
 }
 ];
 
