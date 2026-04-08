@@ -1,4 +1,4 @@
-// ===== BLOG DATA — All 9 blogs with correct internal links =====
+// ===== BLOG DATA — All blogs with correct internal links =====
 const blogData = [
     {
         id: 1,
@@ -7,8 +7,6 @@ const blogData = [
         category: 'doctor',
         categoryName: 'Doctor Careers',
         readTime: 10,
-        author: 'Vaidyog Team',
-        authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
         date: 'Feb 10, 2026',
         featured: true,
         url: 'blogs/doctor-salary.html'
@@ -20,8 +18,6 @@ const blogData = [
         category: 'nursing',
         categoryName: 'Nursing Careers',
         readTime: 12,
-        author: 'Vaidyog Team',
-        authorImg: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
         date: 'Feb 12, 2026',
         featured: true,
         url: 'blogs/nursing-career-guide-2026.html'
@@ -33,8 +29,6 @@ const blogData = [
         category: 'hospital',
         categoryName: 'Hospital HR',
         readTime: 15,
-        author: 'Vaidyog Team',
-        authorImg: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
         date: 'Feb 17, 2026',
         featured: true,
         url: 'blogs/top-50-medical-interview-questions.html'
@@ -46,8 +40,6 @@ const blogData = [
         category: 'education',
         categoryName: 'Medical Education',
         readTime: 15,
-        author: 'Vaidyog Team',
-        authorImg: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
         date: 'Feb 18, 2026',
         featured: true,
         url: 'blogs/neet-pg-2026-preparation-strategy.html'
@@ -59,8 +51,6 @@ const blogData = [
         category: 'doctor',
         categoryName: 'Doctor Careers',
         readTime: 11,
-        author: 'Vaidyog Team',
-        authorImg: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
         date: 'Feb 19, 2026',
         featured: true,
         url: 'blogs/private-vs-government-hospital-jobs.html'
@@ -72,8 +62,6 @@ const blogData = [
         category: 'nursing',
         categoryName: 'Nursing Careers',
         readTime: 5,
-        author: 'Vaidyog Team',
-        authorImg: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
         date: 'Feb 21, 2026',
         featured: true,
         url: 'blogs/abroad-nursing-jobs-guide.html'
@@ -85,8 +73,6 @@ const blogData = [
         category: 'doctor',
         categoryName: 'Doctor Careers',
         readTime: 9,
-        author: 'Vaidyog Team',
-        authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
         date: 'Feb 23, 2026',
         featured: false,
         url: 'blogs/medical-specialization-guide.html'
@@ -98,8 +84,6 @@ const blogData = [
         category: 'nursing',
         categoryName: 'Nursing Careers',
         readTime: 7,
-        author: 'Vaidyog Team',
-        authorImg: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
         date: 'Feb 24, 2026',
         featured: false,
         url: 'blogs/nursing-salary-guide-2026.html'
@@ -111,116 +95,98 @@ const blogData = [
         category: 'hospital',
         categoryName: 'Hospital HR',
         readTime: 11,
-        author: 'Vaidyog Team',
-        authorImg: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
         date: 'Mar 23, 2026',
         featured: false,
         url: 'blogs/hospital-management.html'
     },
     {
-    id: 10,
-    title: 'Will AI Replace Doctors? Future of AI in Healthcare 2026',
-    excerpt: 'Will AI replace doctors? Explore how AI is transforming Indian healthcare, benefits in diagnosis, and why doctors will always be essential.',
-    category: 'technology',
-    categoryName: 'Healthcare Technology',
-    readTime: 12,
-    author: 'Vaidyog Team',
-    authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7',
-    date: 'Mar 26, 2026',
-    featured: true,
-    url: 'blogs/ai-in-healthcare-future.html'
+        id: 10,
+        title: 'Will AI Replace Doctors? Future of AI in Healthcare 2026',
+        excerpt: 'Will AI replace doctors? Explore how AI is transforming Indian healthcare, benefits in diagnosis, and why doctors will always be essential.',
+        category: 'technology',
+        categoryName: 'Healthcare Technology',
+        readTime: 12,
+        date: 'Mar 26, 2026',
+        featured: false,
+        url: 'blogs/ai-in-healthcare-future.html'
     },
     {
-    id: 11,
-    title: 'Staff Nurse Jobs Private Hospitals 2026: Salary, Guide & Tips',
-    excerpt: 'Complete guide to staff nurse jobs in private hospitals 2026. Salary ₹25K-60K/month, top hospital chains, interview tips, and how to get hired fast.',
-    category: 'nursing',
-    categoryName: 'Nursing Careers',
-    readTime: 10,
-    author: 'Vaidyog Team',
-    authorImg: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80',
-    date: 'Mar 30, 2026',
-    featured: true,
-    url: 'blogs/staff-nurse-jobs-private-hospitals.html'
-},
-{
-    id: 12,
-    title: 'Medical Coding Jobs Remote 2026: Fresher Guide & Salary',
-    excerpt: 'Find medical coding jobs remote in India 2026. Work from home medical coding jobs for freshers: salary ₹25K-45K, certification guide, top companies hiring.',
-    category: 'medical-coding',
-    categoryName: 'Medical Coding',
-    readTime: 10,
-    author: 'Vaidyog Team',
-    authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7',
-    date: 'Mar 31, 2026',
-    featured: true,
-    url: 'blogs/medical-coding-jobs-remote.html'
-},
-{
-    id: 13,
-    title: 'Hospital Vacancies Bangalore 2026: Top Hospitals Hiring',
-    excerpt: 'Find hospital vacancies in Bangalore 2026. Latest hospital jobs in Bangalore for nurses, doctors, technicians. Salary ₹25K-1.5L, Apollo, Manipal, Fortis hiring.',
-    category: 'healthcare-jobs',
-    categoryName: 'Healthcare Jobs',
-    readTime: 9,
-    author: 'Vaidyog Team',
-    authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7',
-    date: 'Apr 1, 2026',
-    featured: true,
-    url: 'blogs/hospital-vacancies-bangalore.html'
-},
-{
-    id: 14,
-    title: 'Medical Field Jobs List 2026: 50+ Career Options in India',
-    excerpt: 'Complete medical field jobs list 2026. Explore 50+ career options in medical field with salary, qualification, and growth. Find your dream medical field job.',
-    category: 'medical-careers',
-    categoryName: 'Medical Careers',
-    readTime: 12,
-    author: 'Vaidyog Team',
-    authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7',
-    date: 'Apr 2, 2026',
-    featured: true,
-    url: 'blogs/medical-field-jobs-list.html'
-},
-{
-    id: 15,
-    title: 'Radiologist Jobs India 2026: Salary, Scope & Top Hospitals Hiring',
-    excerpt: 'Find radiologist jobs in India 2026. Average salary ₹15L-40L, top hospitals hiring radiologists, MD Radiology scope, and complete career guide.',
-    category: 'doctor',
-    categoryName: 'Doctor Careers',
-    readTime: 9,
-    author: 'Vaidyog Team',
-    authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7',
-    date: 'Apr 6, 2026',
-    featured: true,
-    url: 'blogs/radiologist-jobs-india.html'
-},
-{
-    id: 16,
-    title: 'Medical Representative Jobs India 2026: Salary & Top Companies',
-    excerpt: 'Find medical representative jobs in India 2026. Average salary ₹3L-8L, top pharma companies hiring, skills required, and complete career guide for MR jobs.',
-    category: 'pharma',
-    categoryName: 'Pharma Careers',
-    readTime: 9,
-    author: 'Vaidyog Team',
-    authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7',
-    date: 'Apr 7, 2026',
-    featured: true,
-    url: 'blogs/medical-representative-jobs-india.html'
-},
-{
-    id: 17,
-    title: 'Pharmacist Jobs India 2026: Salary, Skills & Top Hiring Companies',
-    excerpt: 'Find pharmacist jobs in India 2026. Average salary ₹2.5L-6L, top pharma companies hiring, B.Pharm and D.Pharm jobs, skills required, and complete career guide.',
-    category: 'pharmacy',
-    categoryName: 'Pharmacy Careers',
-    readTime: 9,
-    author: 'Vaidyog Team',
-    authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7',
-    date: 'Apr 8, 2026',
-    featured: true,
-    url: 'blogs/pharmacist-jobs-india.html'
-}
+        id: 11,
+        title: 'Staff Nurse Jobs Private Hospitals 2026: Salary, Guide & Tips',
+        excerpt: 'Complete guide to staff nurse jobs in private hospitals 2026. Salary ₹25K-60K/month, top hospital chains, interview tips, and how to get hired fast.',
+        category: 'nursing',
+        categoryName: 'Nursing Careers',
+        readTime: 10,
+        date: 'Mar 30, 2026',
+        featured: false,
+        url: 'blogs/staff-nurse-jobs-private-hospitals.html'
+    },
+    {
+        id: 12,
+        title: 'Medical Coding Jobs Remote 2026: Fresher Guide & Salary',
+        excerpt: 'Find medical coding jobs remote in India 2026. Work from home medical coding jobs for freshers: salary ₹25K-45K, certification guide, top companies hiring.',
+        category: 'medical-coding',
+        categoryName: 'Medical Coding',
+        readTime: 10,
+        date: 'Mar 31, 2026',
+        featured: false,
+        url: 'blogs/medical-coding-jobs-remote.html'
+    },
+    {
+        id: 13,
+        title: 'Hospital Vacancies Bangalore 2026: Top Hospitals Hiring',
+        excerpt: 'Find hospital vacancies in Bangalore 2026. Latest hospital jobs in Bangalore for nurses, doctors, technicians. Salary ₹25K-1.5L, Apollo, Manipal, Fortis hiring.',
+        category: 'healthcare-jobs',
+        categoryName: 'Healthcare Jobs',
+        readTime: 9,
+        date: 'Apr 1, 2026',
+        featured: false,
+        url: 'blogs/hospital-vacancies-bangalore.html'
+    },
+    {
+        id: 14,
+        title: 'Medical Field Jobs List 2026: 50+ Career Options in India',
+        excerpt: 'Complete medical field jobs list 2026. Explore 50+ career options in medical field with salary, qualification, and growth. Find your dream medical field job.',
+        category: 'medical-careers',
+        categoryName: 'Medical Careers',
+        readTime: 12,
+        date: 'Apr 2, 2026',
+        featured: false,
+        url: 'blogs/medical-field-jobs-list.html'
+    },
+    {
+        id: 15,
+        title: 'Radiologist Jobs India 2026: Salary, Scope & Top Hospitals Hiring',
+        excerpt: 'Find radiologist jobs in India 2026. Average salary ₹15L-40L, top hospitals hiring radiologists, MD Radiology scope, and complete career guide.',
+        category: 'doctor',
+        categoryName: 'Doctor Careers',
+        readTime: 9,
+        date: 'Apr 6, 2026',
+        featured: false,
+        url: 'blogs/radiologist-jobs-india.html'
+    },
+    {
+        id: 16,
+        title: 'Medical Representative Jobs India 2026: Salary & Top Companies',
+        excerpt: 'Find medical representative jobs in India 2026. Average salary ₹3L-8L, top pharma companies hiring, skills required, and complete career guide for MR jobs.',
+        category: 'pharma',
+        categoryName: 'Pharma Careers',
+        readTime: 9,
+        date: 'Apr 7, 2026',
+        featured: false,
+        url: 'blogs/medical-representative-jobs-india.html'
+    },
+    {
+        id: 17,
+        title: 'Pharmacist Jobs India 2026: Salary, Skills & Top Hiring Companies',
+        excerpt: 'Find pharmacist jobs in India 2026. Average salary ₹2.5L-6L, top pharma companies hiring, B.Pharm and D.Pharm jobs, skills required, and complete career guide.',
+        category: 'pharmacy',
+        categoryName: 'Pharmacy Careers',
+        readTime: 9,
+        date: 'Apr 8, 2026',
+        featured: false,
+        url: 'blogs/pharmacist-jobs-india.html'
+    }
 ];
 
 // ===== Config =====
@@ -249,26 +215,17 @@ function createBlogCard(blog) {
     categorySpan.textContent = blog.categoryName;
     categorySpan.style.backgroundColor = getCategoryColor(blog.category);
 
-    const titleEl = card.querySelector('.blog-title');
-    titleEl.textContent = blog.title;
+    const titleLink = card.querySelector('.blog-title a');
+    titleLink.textContent = blog.title;
+    titleLink.href = blog.url;
 
     card.querySelector('.blog-excerpt').textContent = blog.excerpt;
-    card.querySelector('.read-time').innerHTML = `<i class="far fa-clock" aria-hidden="true"></i> ${blog.readTime} min read`;
-
-    const img = card.querySelector('.author-img');
-    img.src = blog.authorImg;
-    img.alt = `${blog.author} profile photo`;
-    img.width = 40;
-    img.height = 40;
-
-    card.querySelector('.author-name').textContent = blog.author;
+    card.querySelector('.read-time-value').textContent = blog.readTime;
     card.querySelector('.post-date').textContent = blog.date;
 
-    const links = card.querySelectorAll('a.read-more, a.blog-link');
-    links.forEach(a => {
-        a.href = blog.url;
-        a.setAttribute('aria-label', `Read ${blog.title}`);
-    });
+    const readMore = card.querySelector('.read-more');
+    readMore.href = blog.url;
+    readMore.setAttribute('aria-label', `Read ${blog.title}`);
 
     return clone;
 }
