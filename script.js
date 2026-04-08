@@ -207,6 +207,19 @@ const blogData = [
     date: 'Apr 7, 2026',
     featured: true,
     url: 'blogs/medical-representative-jobs-india.html'
+},
+{
+    id: 17,
+    title: 'Pharmacist Jobs India 2026: Salary, Skills & Top Hiring Companies',
+    excerpt: 'Find pharmacist jobs in India 2026. Average salary ₹2.5L-6L, top pharma companies hiring, B.Pharm and D.Pharm jobs, skills required, and complete career guide.',
+    category: 'pharmacy',
+    categoryName: 'Pharmacy Careers',
+    readTime: 9,
+    author: 'Vaidyog Team',
+    authorImg: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7',
+    date: 'Apr 8, 2026',
+    featured: true,
+    url: 'blogs/pharmacist-jobs-india.html'
 }
 ];
 
