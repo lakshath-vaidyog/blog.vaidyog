@@ -186,6 +186,17 @@ const blogData = [
         date: 'Apr 8, 2026',
         featured: false,
         url: 'blogs/pharmacist-jobs-india.html'
+    },
+    {
+    id: 18,
+    title: 'Lab Technician Jobs India 2026: Salary, Skills & Top Hiring',
+    excerpt: 'Find lab technician jobs in India 2026. Medical lab technician salary ₹2L-5L, top hospitals hiring, DMLT and BMLT jobs, skills required, and complete career guide.',
+    category: 'paramedical',
+    categoryName: 'Paramedical Careers',
+    readTime: 9,
+    date: 'Apr 9, 2026',
+    featured: false,
+    url: 'blogs/lab-technician-jobs-india.html'
     }
 ];
 
