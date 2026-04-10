@@ -197,6 +197,17 @@ const blogData = [
     date: 'Apr 9, 2026',
     featured: false,
     url: 'blogs/lab-technician-jobs-india.html'
+    },
+    {
+    id: 19,
+    title: 'OT Technician Jobs India 2026: Salary, Skills & Top Hiring',
+    excerpt: 'Find operation theatre technician jobs in India 2026. OT technician salary ₹2L-4.5L, top hospitals hiring, diploma in OT technology, skills required, and complete career guide.',
+    category: 'paramedical',
+    categoryName: 'Paramedical Careers',
+    readTime: 9,
+    date: 'Apr 10, 2026',
+    featured: false,
+    url: 'blogs/ot-technician-jobs-india.html'
     }
 ];
 
