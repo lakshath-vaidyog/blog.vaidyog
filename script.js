@@ -208,7 +208,18 @@ const blogData = [
     date: 'Apr 10, 2026',
     featured: false,
     url: 'blogs/ot-technician-jobs-india.html'
-    }
+    },
+    {
+    id: 20,
+    title: 'Dialysis Technician Jobs India 2026: Salary, Skills & Top Hiring',
+    excerpt: 'Find dialysis technician jobs in India 2026. Dialysis technician salary ₹2L-4.5L, top hospitals hiring, diploma in dialysis technology, skills required, and complete career guide.',
+    category: 'paramedical',
+    categoryName: 'Paramedical Careers',
+    readTime: 9,
+    date: 'Apr 11, 2026',
+    featured: true,
+    url: 'blogs/dialysis-technician-jobs-india.html'
+}
 ];
 
 // ===== Config =====
