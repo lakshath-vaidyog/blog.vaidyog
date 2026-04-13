@@ -219,6 +219,17 @@ const blogData = [
     date: 'Apr 11, 2026',
     featured: true,
     url: 'blogs/dialysis-technician-jobs-india.html'
+},
+{
+    id: 21,
+    title: 'ECG Technician Jobs India 2026: Salary, Skills & Top Hiring',
+    excerpt: 'Find ECG technician jobs in India 2026. ECG technician salary ₹1.8L-4L, top hospitals hiring, diploma in ECG technology, skills required, and complete career guide.',
+    category: 'paramedical',
+    categoryName: 'Paramedical Careers',
+    readTime: 8,
+    date: 'Apr 13, 2026',
+    featured: true,
+    url: 'blogs/ecg-technician-jobs-india.html'
 }
 ];
 
