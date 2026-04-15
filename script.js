@@ -230,6 +230,17 @@ const blogData = [
     date: 'Apr 13, 2026',
     featured: true,
     url: 'blogs/ecg-technician-jobs-india.html'
+},
+{
+    id: 22,
+    title: 'Physiotherapist Jobs India 2026: Salary, Skills & Top Hiring',
+    excerpt: 'Find physiotherapist jobs in India 2026. Physiotherapist salary ₹3L-8L, top hospitals hiring, BPT and MPT jobs, skills required, and complete career guide.',
+    category: 'therapy',
+    categoryName: 'Therapy Careers',
+    readTime: 9,
+    date: 'Apr 15, 2026',
+    featured: true,
+    url: 'blogs/physiotherapist-jobs-india.html'
 }
 ];
 
