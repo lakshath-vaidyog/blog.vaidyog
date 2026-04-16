@@ -241,6 +241,17 @@ const blogData = [
     date: 'Apr 15, 2026',
     featured: true,
     url: 'blogs/physiotherapist-jobs-india.html'
+},
+{
+    id: 23,
+    title: 'Radiology Technician Jobs India 2026: Salary, Skills & Top Hiring',
+    excerpt: 'Find radiology technician jobs in India 2026. Radiology technician salary ₹2.5L-5.5L, top hospitals hiring, diploma and degree jobs, skills required, and complete career guide.',
+    category: 'paramedical',
+    categoryName: 'Paramedical Careers',
+    readTime: 9,
+    date: 'Apr 16, 2026',
+    featured: true,
+    url: 'blogs/radiology-technician-jobs-india.html'
 }
 ];
 
