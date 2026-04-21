@@ -252,6 +252,17 @@ const blogData = [
     date: 'Apr 16, 2026',
     featured: true,
     url: 'blogs/radiology-technician-jobs-india.html'
+},
+{
+    id: 24,
+    title: 'Hospital Administration Jobs India 2026: Salary, Skills & Top Hiring',
+    excerpt: 'Find hospital administration jobs in India 2026. Hospital administrator salary ₹4L-12L, top hospitals hiring, MBA and MHA jobs, skills required, and complete career guide.',
+    category: 'administration',
+    categoryName: 'Healthcare Administration',
+    readTime: 9,
+    date: 'Apr 21, 2026',
+    featured: true,
+    url: 'blogs/hospital-administration-jobs-india.html'
 }
 ];
 
