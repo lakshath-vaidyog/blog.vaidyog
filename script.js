@@ -217,7 +217,7 @@ const blogData = [
     categoryName: 'Paramedical Careers',
     readTime: 9,
     date: 'Apr 11, 2026',
-    featured: true,
+    featured: false,
     url: 'blogs/dialysis-technician-jobs-india.html'
 },
 {
@@ -228,7 +228,7 @@ const blogData = [
     categoryName: 'Paramedical Careers',
     readTime: 8,
     date: 'Apr 13, 2026',
-    featured: true,
+    featured: false,
     url: 'blogs/ecg-technician-jobs-india.html'
 },
 {
@@ -239,7 +239,7 @@ const blogData = [
     categoryName: 'Therapy Careers',
     readTime: 9,
     date: 'Apr 15, 2026',
-    featured: true,
+    featured: false,
     url: 'blogs/physiotherapist-jobs-india.html'
 },
 {
@@ -250,7 +250,7 @@ const blogData = [
     categoryName: 'Paramedical Careers',
     readTime: 9,
     date: 'Apr 16, 2026',
-    featured: true,
+    featured: false,
     url: 'blogs/radiology-technician-jobs-india.html'
 },
 {
@@ -261,8 +261,19 @@ const blogData = [
     categoryName: 'Healthcare Administration',
     readTime: 9,
     date: 'Apr 21, 2026',
-    featured: true,
+    featured: false,
     url: 'blogs/hospital-administration-jobs-india.html'
+},
+{
+    id: 25,
+    title: 'Nursing Superintendent Jobs India 2026: Salary, Skills & Top Hiring',
+    excerpt: 'Find nursing superintendent jobs in India 2026. Nursing superintendent salary ₹6L-15L, top hospitals hiring, M.Sc Nursing jobs, skills required, and complete career guide.',
+    category: 'nursing',
+    categoryName: 'Nursing Careers',
+    readTime: 9,
+    date: 'Apr 22, 2026',
+    featured: false,
+    url: 'blogs/nursing-superintendent-jobs-india.html'
 }
 ];
 
