@@ -274,6 +274,17 @@ const blogData = [
     date: 'Apr 22, 2026',
     featured: false,
     url: 'blogs/nursing-superintendent-jobs-india.html'
+},
+{
+    id: 26,
+    title: 'Healthcare Data Analyst Jobs India 2026: Salary, Skills & Top Hiring',
+    excerpt: 'Find healthcare data analyst jobs in India 2026. Healthcare data analyst salary ₹4L-12L, top companies hiring, skills required, and complete career guide.',
+    category: 'analytics',
+    categoryName: 'Healthcare Analytics',
+    readTime: 9,
+    date: 'Apr 23, 2026',
+    featured: false,
+    url: 'blogs/healthcare-data-analyst-jobs-india.html'
 }
 ];
 
