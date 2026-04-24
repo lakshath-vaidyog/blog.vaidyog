@@ -285,6 +285,17 @@ const blogData = [
     date: 'Apr 23, 2026',
     featured: false,
     url: 'blogs/healthcare-data-analyst-jobs-india.html'
+},
+{
+    id: 27,
+    title: 'Clinical Research Associate Jobs India 2026: Salary & Hiring',
+    excerpt: 'Find clinical research associate jobs in India 2026. CRA salary ₹3.5L-10L, top pharma companies hiring, skills required, and complete career guide.',
+    category: 'clinical-research',
+    categoryName: 'Clinical Research',
+    readTime: 9,
+    date: 'Apr 24, 2026',
+    featured: false,
+    url: 'blogs/clinical-research-associate-jobs-india.html'
 }
 ];
 
