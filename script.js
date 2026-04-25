@@ -296,6 +296,17 @@ const blogData = [
     date: 'Apr 24, 2026',
     featured: false,
     url: 'blogs/clinical-research-associate-jobs-india.html'
+},
+{
+    id: 28,
+    title: 'Pharmacy Assistant Jobs India 2026: ₹2.5L-4.5L Salary',
+    excerpt: 'Find pharmacy assistant jobs in India 2026. Pharmacy assistant salary ₹2.5L-4.5L, top pharmacies hiring, D.Pharm jobs, and complete career guide.',
+    category: 'pharmacy',
+    categoryName: 'Pharmacy Careers',
+    readTime: 8,
+    date: 'Apr 25, 2026',
+    featured: false,
+    url: 'blogs/pharmacy-assistant-jobs-india.html'
 }
 ];
 
