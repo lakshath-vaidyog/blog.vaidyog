@@ -307,6 +307,17 @@ const blogData = [
     date: 'Apr 25, 2026',
     featured: false,
     url: 'blogs/pharmacy-assistant-jobs-india.html'
+},
+{
+    id: 29,
+    title: 'Medical Coding Salary India 2026: ₹3L-7L Pay Guide',
+    excerpt: 'Complete guide to medical coding salary in India 2026. Medical coding salary ₹3L-7L per year. Fresher to experienced pay scale, CPC certification impact, remote vs office salary.',
+    category: 'medical-coding',
+    categoryName: 'Medical Coding',
+    readTime: 8,
+    date: 'Apr 27, 2026',
+    featured: false,
+    url: 'blogs/medical-coding-salary-india.html'
 }
 ];
 
