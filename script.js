@@ -318,6 +318,17 @@ const blogData = [
     date: 'Apr 27, 2026',
     featured: false,
     url: 'blogs/medical-coding-salary-india.html'
+},
+{
+    id: 30,
+    title: 'OT Assistant Jobs India 2026: ₹2L-4L Salary & Hiring Guide',
+    excerpt: 'Complete guide to OT assistant jobs in India 2026. OT assistant salary ₹2L-4L, duties, top hospitals hiring, and career path.',
+    category: 'paramedical',
+    categoryName: 'Paramedical Careers',
+    readTime: 10,
+    date: 'Apr 28, 2026',
+    featured: false,
+    url: 'blogs/ot-assistant-jobs-india.html'
 }
 ];
 
